@@ -1,0 +1,6 @@
+c:\users\terentev\documents\visual studio 2013\Projects\EmployeeApp\EmployeeApp\bin\Debug\EmployeeApp.exe.config
+c:\users\terentev\documents\visual studio 2013\Projects\EmployeeApp\EmployeeApp\obj\Debug\EmployeeApp.csprojResolveAssemblyReference.cache
+c:\users\terentev\documents\visual studio 2013\Projects\EmployeeApp\EmployeeApp\bin\Debug\EmployeeApp.exe
+c:\users\terentev\documents\visual studio 2013\Projects\EmployeeApp\EmployeeApp\bin\Debug\EmployeeApp.pdb
+c:\users\terentev\documents\visual studio 2013\Projects\EmployeeApp\EmployeeApp\obj\Debug\EmployeeApp.exe
+c:\users\terentev\documents\visual studio 2013\Projects\EmployeeApp\EmployeeApp\obj\Debug\EmployeeApp.pdb
