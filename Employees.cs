@@ -3,23 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace EmployeeApp
 {
-    abstract class Employee
+    [Serializable]
+    [XmlInclude(typeof(EmployeeFixed))]
+    [XmlInclude(typeof(EmployeeTimed))]
+    public abstract class Employee
     {
         // Поля
+        [XmlAttribute]
         public int ID { get; set; } // ID сотрудника
+        [XmlAttribute]
         public string Name { get; set; } // Имя сотрудника
+        [XmlAttribute]
         public double Salary { get; set; } // Зарплата сотрудника
 
         // Конструкторы
         public Employee() { }
-        public Employee(int id, string name)
-        {
-            ID = id;
-            Name = name;
-        }
+        public Employee(int id, string name)   { ID = id; Name = name; }
         
         // Методы
 
@@ -31,12 +34,15 @@ namespace EmployeeApp
 
         // Абстрактный метод для расчета зарплаты
         // переопределяется для потомков
+     //   [NonSerialized]
         abstract public double Payroll(double rate);
     } // Employee
 
     // Сотрудник с фиксированной зарплатой
-    class EmployeeFixed : Employee
+    [Serializable]
+    public class EmployeeFixed : Employee
     {
+        public EmployeeFixed() { }
         public EmployeeFixed(int id, string name, double rate)
             : base(id, name)
         {
@@ -48,8 +54,10 @@ namespace EmployeeApp
     } // EmployeeFixed
 
     // Сотрудник с почасовой зарплатой
-    class EmployeeTimed : Employee
+    [Serializable]
+    public class EmployeeTimed : Employee
     {
+        public EmployeeTimed() { }
         public EmployeeTimed(int id, string name, double rate)
             : base(id, name)
         {

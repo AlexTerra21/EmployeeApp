@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ArrayOfEmployee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employee xsi:type="EmployeeTimed" ID="1" Name="Tom Clancy" Salary="499.20000000000005" />
+  <Employee xsi:type="EmployeeFixed" ID="2" Name="Bruse Willis" Salary="800" />
+  <Employee xsi:type="EmployeeFixed" ID="3" Name="Mark Twen" Salary="1000" />
+  <Employee xsi:type="EmployeeTimed" ID="4" Name="Tom Cruse" Salary="832" />
+  <Employee xsi:type="EmployeeTimed" ID="5" Name="Gabriel March" Salary="915.2" />
+  <Employee xsi:type="EmployeeFixed" ID="6" Name="Martin Marvell" Salary="1350" />
+  <Employee xsi:type="EmployeeFixed" ID="7" Name="Piter Parker" Salary="1000" />
+  <Employee xsi:type="EmployeeFixed" ID="8" Name="Calvn Cleyn" Salary="500" />
+  <Employee xsi:type="EmployeeTimed" ID="9" Name="Miky Mause" Salary="1664" />
+  <Employee xsi:type="EmployeeTimed" ID="10" Name="Mini Mause" Salary="1996.8000000000002" />
+</ArrayOfEmployee>
